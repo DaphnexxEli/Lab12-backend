@@ -25,9 +25,9 @@ public class CloudStorageHelper {
     static {
         InputStream serviceAccount = null;
         try {
-            serviceAccount = new ClassPathResource("imageupload-ecc32-f8fb6de7aee0.json").getInputStream();
+            serviceAccount = new ClassPathResource("imageupload.json").getInputStream();
             storage = StorageOptions.newBuilder().setCredentials(GoogleCredentials.fromStream(serviceAccount))
-                    .setProjectId("imageupload-ecc32")
+                    .setProjectId("imageupload-4bb6a")
                     .build().getService();
         } catch (IOException e) {
             e.printStackTrace();
