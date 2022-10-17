@@ -18,6 +18,7 @@ public class OrganizationController {
     @Autowired
     OrganizerService organizerService;
 
+
     @GetMapping("organizers")
     public ResponseEntity<?> getOrganizerLists(@RequestParam(value = "_limit", required = false) Integer perPage
             , @RequestParam(value = "_page", required = false) Integer page ){
@@ -51,3 +52,4 @@ public class OrganizationController {
         return ResponseEntity.ok(LabMapper.INSTANCE.getOrganizerDTO(output));
     }
 }
+

@@ -1,8 +1,8 @@
 package se331.rest.service;
 
 import org.springframework.data.domain.Page;
-import se331.rest.entity.Event;
 import se331.rest.entity.Organizer;
+import se331.rest.entity.Event;
 
 import java.util.List;
 
@@ -12,3 +12,4 @@ public interface OrganizerService {
     Organizer save(Organizer organizer);
     Organizer getOrganizer(Long id);
 }
+
